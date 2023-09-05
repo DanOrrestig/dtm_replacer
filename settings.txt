@@ -1,0 +1,18 @@
+# This is the settings file for dtm_replacer
+# The program purpose:
+#   Easy replacing of git-code variables for manual runs in bigquery
+#
+# Example row (without prefix '#')
+# {{ startdate }}|TODAY-1|TODAY-2|TODAY-10||TODAY-1|TODAY-2|TODAY-10
+#
+# '||' is the separator of 'finds' and 'replaces
+# '|' is the separator of individual 'finds' or 'replaces'
+# 'TODAY-1' is replaced by date-text for yesterday
+# 'EMPTY' is needed to make empty find/replace boxes
+#
+
+{{ startdate }}|TODAY-1|TODAY-2|TODAY-10||TODAY-1|TODAY-2|TODAY-10
+{{ enddate }}|TODAY-1|TODAY-2|TODAY-10||TODAY-1|TODAY-2|TODAY-10
+{{ lake_project_id }}||svs-cobra-dwh-prodb|svs-cobra-dwh-test3|svs-cobra-dwh-test3gcp|svs-cobra-dwh-test3plain
+EMPTY||EMPTY
+EMPTY||EMPTY
