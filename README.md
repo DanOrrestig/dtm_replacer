@@ -1,7 +1,7 @@
 # dtm_replacer
 Easy replacing of code variables for manual runs in external program
 
-Also it is posible to use in reverse to get tested and working code back to original format
+Also it is possible to use in reverse to get tested and working code back to original format :-)
 
 Setup:
 get the code with clone from https://github.com/DanOrrestig/dtm_replacer
