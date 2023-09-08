@@ -10,5 +10,6 @@ edit settings.txt to your liking
 run 'python replacer.py' at the prompt
 
 Use:
-paste the code with variables in the textbox and press ok.
-copy that and run in the external program
+paste the code with variables in the textbox and press "Ok"
+...the processed code is added to the clipboard...
+paste it in the external program and run
