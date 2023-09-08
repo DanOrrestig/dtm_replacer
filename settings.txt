@@ -11,7 +11,7 @@
 # 'EMPTY' is needed to make empty find/replace boxes
 #
 
-{{ startdate }}|TODAY-1|TODAY-2|TODAY-10||TODAY-1|TODAY-2|TODAY-10
+{{ startdate }}|TODAY-2|TODAY-1|TODAY-10||TODAY-2|TODAY-1|TODAY-10
 {{ enddate }}|TODAY-1|TODAY-2|TODAY-10||TODAY-1|TODAY-2|TODAY-10
 {{ lake_project_id }}||svs-cobra-dwh-prodb|svs-cobra-dwh-test3|svs-cobra-dwh-test3gcp|svs-cobra-dwh-test3plain
 EMPTY||EMPTY

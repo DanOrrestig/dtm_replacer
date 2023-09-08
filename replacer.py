@@ -47,7 +47,7 @@ layout = [
     [sg.Text('Replace with')], rep,
     [sg.Text('Text to fix')],
     [t],
-    [sg.Button('Ok',size=(38,40), font=("", 15)), sg.Button('Cancel',size=(38,40), font=("", 15))],
+    [sg.Button('Ok (and copy)',size=(38,40), font=("", 15)), sg.Button('Cancel',size=(38,40), font=("", 15))],
 ]
 
 # Create the Window
@@ -75,4 +75,7 @@ while True:
 
         print('\n')
         t.update(s)
+        
+        sg.clipboard_set(s)
+
 window.close()
