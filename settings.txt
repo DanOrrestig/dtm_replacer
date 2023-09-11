@@ -1,6 +1,6 @@
 # This is the settings file for dtm_replacer
 # The program purpose:
-#   Easy replacing of git-code variables for manual runs in bigquery
+#   Easy replacing of code variables for manual runs in external program
 #
 # Example row (without prefix '#')
 # {{ startdate }}|TODAY-1|TODAY-2|TODAY-10||TODAY-1|TODAY-2|TODAY-10
