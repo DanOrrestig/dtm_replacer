@@ -1,6 +1,11 @@
 # This is the settings file for dtm_replacer
+#
 # The program purpose:
-#   Easy replacing of code variables for manual runs in external program
+#   Easy replacing of code variables for manual runs in an external program
+#
+# Hints:
+#   Change this settings file to suit your needs
+#   Can be used to replace back to original variables for storing, with clever choices for 'finds' and 'replaces'
 #
 # Example row (without prefix '#')
 # {{ startdate }}|TODAY-1|TODAY-2|TODAY-10||TODAY-1|TODAY-2|TODAY-10
