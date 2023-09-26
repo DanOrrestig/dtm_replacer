@@ -18,6 +18,6 @@
 
 {{ startdate }}|TODAY-2|TODAY-1|TODAY-10||TODAY-2|TODAY-1|TODAY-10|{{ startdate }}
 {{ enddate }}|TODAY-1|TODAY-2|TODAY-10||TODAY-1|TODAY-2|TODAY-10|{{ enddate }}
-{{ lake_project_id }}|svs-cobra-dwh-prodb|svs-cobra-dwh-test3|svs-cobra-dwh-test3gcp|svs-cobra-dwh-test3plain||svs-cobra-dwh-prodb|svs-cobra-dwh-test3|svs-cobra-dwh-test3gcp|svs-cobra-dwh-test3plain|{{ lake_project_id }}
+{{ lake_project_id }}|svs-cobra-lake-prodb|svs-cobra-lake-test3|svs-cobra-lake-test3gcp|svs-cobra-lake-test3plain||svs-cobra-lake-prodb|svs-cobra-lake-test3|svs-cobra-lake-test3gcp|svs-cobra-lake-test3plain|{{ lake_project_id }}
 EMPTY||EMPTY
 EMPTY||EMPTY

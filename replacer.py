@@ -18,7 +18,7 @@ def today_fix(input):
         input = str(today + timedelta(days=int(input[5:])))
     if input.startswith('EMPTY'):
         input = ''
-    return input
+    return input.rstrip()
 
 app_path = os.path.dirname(__file__) + '\\' # "/home/airflow/gcs/dags/gdpr/"
 sys.path.insert(1, app_path)
