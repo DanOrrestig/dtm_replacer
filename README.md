@@ -8,6 +8,7 @@ get the code with clone from https://github.com/DanOrrestig/dtm_replacer
 cd to that catalog on your computer terminal
 edit settings.txt to your liking
 run 'python replacer.py' at the prompt
+Except standard libraries, the PYPI package PySimpleGUI is required and can be installed with "pip install PySimpleGUI"
 
 Use:
 paste the code with variables in the textbox and press "Ok"
