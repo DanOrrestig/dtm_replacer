@@ -47,7 +47,7 @@ layout = [
     [sg.Text('Replace with')], rep,
     [sg.Text('Text to fix')],
     [t],
-    [sg.Button('Ok (and copy)',size=(38,40), font=("", 15)), sg.Button('Cancel',size=(38,40), font=("", 15))],
+    [sg.Button('Ok (and copy)',size=(38,40), font=("", 15)), sg.Button('Reverse',size=(18,40), font=("", 15)), sg.Button('Cancel',size=(18,40), font=("", 15))],
 ]
 
 # Create the Window
@@ -59,20 +59,33 @@ for i in range(len(fin)):
     fin[i].set_cursor(cursor="arrow")
     rep[i].set_cursor(cursor="arrow")
 
+replace_type = 0
+length = len(fin)
+
 # Event Loop to process "events" and get the "values" of the inputs
 while True:
     event, values = window.read()
     if event == sg.WIN_CLOSED or event == 'Cancel': # if user closes window or clicks cancel
         break
 
+    if event == 'Reverse': # Opposite replace (easy reverse replace)
+        replace_type = 1 #replace + 1 % 2
+        length = len(rep)
+
     if len(t.Get()) > 0:
         s = t.Get()
     
-        for i in range(len(fin)):
-            if len(fin[i].Get()) > 0:
-                print('find ', fin[i].Get(), ' replace with ', rep[i].Get())
-                s = s.replace(fin[i].Get(),rep[i].Get(),-1)
-
+        for i in range(length):
+            if replace_type == 0:
+                if len(fin[i].Get()) > 0:
+                    print('find ', fin[i].Get(), ' replace with ', rep[i].Get())
+                    s = s.replace(fin[i].Get(),rep[i].Get(),-1)
+            else:
+                if len(rep[i].Get()) > 0:
+                    print('find ', rep[i].Get(), ' replace with ', fin[i].Get())
+                    s = s.replace(rep[i].Get(),fin[i].Get(),-1)
+                    
+        replace_type = 0
         print('\n')
         t.update(s)
         
