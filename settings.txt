@@ -16,8 +16,8 @@
 # 'EMPTY' is needed to make empty find/replace boxes
 #
 
-{{ startdate }}|TODAY-2|TODAY-1|TODAY-10||TODAY-2|TODAY-1|TODAY-10|{{ startdate }}
-{{ enddate }}|TODAY-1|TODAY-2|TODAY-10||TODAY-1|TODAY-2|TODAY-10|{{ enddate }}
-{{ lake_project_id }}|svs-cobra-lake-prodb|svs-cobra-lake-test3|svs-cobra-lake-test3gcp|svs-cobra-lake-test3plain||svs-cobra-lake-prodb|svs-cobra-lake-test3|svs-cobra-lake-test3gcp|svs-cobra-lake-test3plain|{{ lake_project_id }}
+{{ startdate }}|TODAY-2|TODAY-1|TODAY-10||TODAY-2|TODAY-1|TODAY-10
+{{ enddate }}|TODAY-1|TODAY-2|TODAY-10||TODAY-1|TODAY-2|TODAY-10
+{{ lake_project_id }}|svs-cobra-lake-prodb|svs-cobra-lake-test3|svs-cobra-lake-test3gcp|svs-cobra-lake-test3plain||svs-cobra-lake-prodb|svs-cobra-lake-test3|svs-cobra-lake-test3gcp|svs-cobra-lake-test3plain
 EMPTY||EMPTY
 EMPTY||EMPTY

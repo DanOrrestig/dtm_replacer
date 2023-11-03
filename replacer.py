@@ -69,7 +69,7 @@ while True:
         break
 
     if event == 'Reverse': # Opposite replace (easy reverse replace)
-        replace_type = 1 #replace + 1 % 2
+        replace_type = 1
         length = len(rep)
 
     if len(t.Get()) > 0:
